@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-04-29T17:42:12.503013+00:00",
+  "generated_at": "2026-04-29T17:57:38.212386+00:00",
   "source_repo": "https://github.com/redbug26/kkc-plugins",
   "plugins_count": 3,
   "plugins": [
@@ -54,7 +54,7 @@
     {
       "id": "vcard-viewer",
       "name": "vCard Viewer",
-      "version": "1.0.0",
+      "version": "1.0.3",
       "type": "viewer",
       "description": "Viewer plugin for .vcf vCard contact files",
       "mime_types": [
@@ -65,7 +65,7 @@
       ],
       "location": {
         "kind": "local",
-        "path": "/assets/plugins/vcard_viewer"
+        "path": "/plugins/vcard_viewer/assets"
       },
       "descriptor": "plugins/vcard_viewer/plugin.toml",
       "extra": {
@@ -74,5 +74,5 @@
       }
     }
   ],
-  "tag": "0.0.3"
+  "tag": "0.0.4"
 }
