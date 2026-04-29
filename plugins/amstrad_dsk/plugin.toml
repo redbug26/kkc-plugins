@@ -9,8 +9,8 @@ modes = ["text"]
 
 [location]
 kind = "local"
-path = "../amstrad_dsk/assets"
+path = "assets"
 
 [extra]
-author = "kkc team"
+author = "kkc community"
 license = "MIT"

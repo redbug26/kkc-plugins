@@ -1,0 +1,16 @@
+[plugin]
+id = "commodore-d64-directory"
+name = "commodore_d64_directory"
+version = "1.0.0"
+type = "viewer"
+description = "Commodore 64 D64 directory viewer"
+mime_types = ["application/x-c64-d64"]
+modes = ["text"]
+
+[location]
+kind = "local"
+path = "assets"
+
+[extra]
+author = "kkc community"
+license = "MIT"

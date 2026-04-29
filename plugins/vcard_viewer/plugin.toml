@@ -1,9 +1,9 @@
 [plugin]
 id = "vcard-viewer"
-name = "vCard Viewer"
+name = "vcard_viewer"
 version = "1.0.4"
 type = "viewer"
-description = "Viewer plugin for .vcf vCard contact files"
+description = "vCard contact viewer"
 mime_types = ["text/vcard"]
 modes = ["text"]
 

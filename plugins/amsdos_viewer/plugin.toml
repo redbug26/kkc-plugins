@@ -1,0 +1,16 @@
+[plugin]
+id = "amsdos-viewer"
+name = "amsdos_viewer"
+version = "1.0.2"
+type = "viewer"
+description = "Viewer for Amstrad AMSDOS files"
+mime_types = ["application/x-amstrad-cpc-amsdos"]
+modes = ["text"]
+
+[location]
+kind = "local"
+path = "assets"
+
+[extra]
+author = "kkc community"
+license = "MIT"
