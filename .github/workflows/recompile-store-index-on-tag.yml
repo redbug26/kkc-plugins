@@ -1,0 +1,41 @@
+name: Recompile store index on tag change
+
+on:
+  push:
+    tags:
+      - "*"
+  workflow_dispatch:
+
+jobs:
+  recompile-store-index:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Rebuild store index
+        run: python3 scripts/compile_store.py
+
+      - name: Commit updated store index if changed
+        run: |
+          if git diff --quiet -- dist/store-index.json; then
+            echo "No changes detected in dist/store-index.json"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/store-index.json
+          git commit -m "chore: recompile store index after tag change"
+          git push origin HEAD:main
