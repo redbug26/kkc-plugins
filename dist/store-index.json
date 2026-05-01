@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-01T14:40:42.347798+00:00",
+  "generated_at": "2026-05-01T14:42:38.991356+00:00",
   "source_repo": "https://github.com/redbug26/kkc-plugins",
   "plugins_count": 5,
   "plugins": [
@@ -546,5 +546,5 @@
       }
     }
   ],
-  "tag": "0.0.8"
+  "tag": "0.0.9"
 }
