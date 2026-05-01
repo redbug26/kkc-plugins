@@ -1,0 +1,51 @@
+[application]
+id = "imgcat"
+name = "imgcat"
+version = "1.0.22"
+description = "Terminal image and GIF viewer."
+category = "viewer"
+type = "external_viewer"
+mime_types = [
+  "image/bmp",
+  "image/gif",
+  "image/jpeg",
+  "image/png",
+  "image/tiff",
+  "image/webp"
+]
+
+[[install]]
+os = "macos"
+method = "brew"
+package = "danielgatis/imgcat/imgcat"
+bin = "imgcat"
+
+[[install]]
+os = "linux"
+method = "script"
+command = "sudo snap install imgcat"
+bin = "imgcat"
+
+[[install]]
+os = ["linux", "macos", "windows"]
+method = "script"
+command = "go install github.com/danielgatis/imgcat@latest"
+bin = "imgcat"
+
+[[install]]
+os = "windows"
+method = "script"
+command = "scoop bucket add scoop-imgcat https://github.com/danielgatis/scoop-imgcat.git && scoop install scoop-imgcat/imgcat"
+bin = "imgcat"
+
+[[install]]
+os = ["linux", "macos", "windows"]
+method = "manual"
+url = "https://github.com/danielgatis/imgcat/releases/latest"
+bin = "imgcat"
+
+[extra]
+homepage = "https://github.com/danielgatis/imgcat"
+repository = "https://github.com/danielgatis/imgcat"
+license = "MIT"
+notes = "Requires a true-color terminal with a monospaced font that includes the lower half block character."
