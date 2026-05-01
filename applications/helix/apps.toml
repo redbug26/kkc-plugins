@@ -1,0 +1,49 @@
+[application]
+id = "helix"
+name = "Helix"
+version = "25.07.1"
+description = "Modal terminal text editor with tree-sitter highlighting and LSP support."
+category = "editor"
+type = "external_editor"
+mime_types = ["text/plain", "text/markdown", "application/json", "text/x-lua", "text/x-python", "text/x-rust"]
+
+[[install]]
+os = "macos"
+method = "brew"
+package = "helix"
+bin = "hx"
+
+[[install]]
+os = ["fedora", "rhel"]
+method = "dnf"
+package = "helix"
+bin = "hx"
+
+[[install]]
+os = "arch"
+method = "pacman"
+package = "helix"
+bin = "helix"
+
+[[install]]
+os = "windows"
+method = "winget"
+package = "Helix.Helix"
+bin = "hx"
+
+[[install]]
+os = "windows"
+method = "scoop"
+package = "helix"
+bin = "hx"
+
+[[install]]
+os = ["linux", "macos", "windows"]
+method = "manual"
+url = "https://github.com/helix-editor/helix/releases/latest"
+bin = "hx"
+
+[extra]
+homepage = "https://helix-editor.com/"
+repository = "https://github.com/helix-editor/helix"
+license = "MPL-2.0"

@@ -1,0 +1,30 @@
+[application]
+id = "bat"
+name = "bat"
+version = "0.25.0"
+description = "Syntax-highlighting text viewer usable as an external viewer."
+category = "viewer"
+type = "external_viewer"
+mime_types = ["text/plain", "text/markdown", "application/json"]
+
+[[install]]
+os = ["macos", "linux"]
+method = "cargo"
+crate = "bat"
+bin = "bat"
+
+[[install]]
+os = "macos"
+method = "brew"
+package = "bat"
+bin = "bat"
+
+[[install]]
+os = ["debian", "ubuntu"]
+method = "apt"
+package = "bat"
+bin = "batcat"
+
+[extra]
+homepage = "https://github.com/sharkdp/bat"
+license = "Apache-2.0 OR MIT"

@@ -1,0 +1,30 @@
+[application]
+id = "micro"
+name = "micro"
+version = "2.0.14"
+description = "Terminal text editor usable as an external editor."
+category = "editor"
+type = "external_editor"
+mime_types = ["text/plain", "text/markdown", "application/json"]
+
+[[install]]
+os = ["macos", "linux"]
+method = "brew"
+package = "micro"
+bin = "micro"
+
+[[install]]
+os = ["debian", "ubuntu"]
+method = "apt"
+package = "micro"
+bin = "micro"
+
+[[install]]
+os = "windows"
+method = "winget"
+package = "zyedidia.micro"
+bin = "micro"
+
+[extra]
+homepage = "https://micro-editor.github.io/"
+license = "MIT"

@@ -1,0 +1,35 @@
+[application]
+id = "opencubicplayer"
+name = "Open Cubic Player"
+version = "3.2.0"
+description = "Text-mode music player and visualizer for modules, chiptunes and common audio formats."
+category = "media"
+type = "external_viewer"
+mime_types = [
+  "audio/mpeg",
+  "audio/ogg",
+  "audio/flac",
+  "audio/wav",
+  "audio/x-mod",
+  "audio/x-s3m",
+  "audio/x-xm",
+  "audio/x-it",
+  "audio/prs.sid"
+]
+
+[[install]]
+os = ["debian", "ubuntu"]
+method = "apt"
+package = "opencubicplayer"
+bin = "ocp"
+
+[[install]]
+os = ["linux", "windows"]
+method = "manual"
+url = "https://github.com/mywave82/opencubicplayer/releases/latest"
+bin = "ocp"
+
+[extra]
+homepage = "https://stian.cubic.org/project-ocp.php"
+repository = "https://github.com/mywave82/opencubicplayer"
+license = "GPL-2.0-or-later"

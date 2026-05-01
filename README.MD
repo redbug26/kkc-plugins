@@ -1,11 +1,11 @@
 # kkc-plugins
 
-Community plugin store for **kkc**.
+Community plugin and application store for **kkc**.
 
 - Local repository: `/Users/miguelvanhove/Dropbox/Sources/kkc-plugins`
 - GitHub repository: `https://github.com/redbug26/kkc-plugins`
 
-This repository may not contain every plugin binary directly. Instead, it stores **plugin descriptors** and generates a compiled **store index** (`dist/store-index.json`) that kkc can read to list and install plugins.
+This repository may not contain every plugin binary or application package directly. Instead, it stores **plugin descriptors** and **application descriptors**, then generates a compiled **store index** (`dist/store-index.json`) that kkc can read to list and install plugins or applications.
 
 ## Repository layout
 
@@ -17,6 +17,9 @@ kkc-plugins/
   plugins/
     <plugin-id>/
       plugin.toml
+  applications/
+    <application-id>/
+      apps.toml
   assets/
     plugins/
       <plugin-folder>/
@@ -25,9 +28,9 @@ kkc-plugins/
     store-index.json
 ```
 
-## Descriptor format
+## Descriptor formats
 
-Each plugin is defined by a `plugin.toml` file.
+Each plugin is defined by a `plugin.toml` file. Each application is defined by an `apps.toml` file.
 
 Main sections:
 
@@ -52,6 +55,24 @@ Fields in `[location]`:
   - `repo` (`owner/repo`)
   - `path` (path in repository) **or** `asset_url` (release/download URL)
   - `ref` (branch/tag/commit, optional, defaults to `main`)
+
+Application descriptors use:
+
+- `[application]`: metadata for an application kkc TUI can install directly
+- `[[install]]`: one or more OS-specific install methods (`cargo`, `brew`, `apt`, etc.)
+- `[extra]`: optional metadata
+
+Common fields in `[application]`:
+
+- `id` (unique)
+- `name`
+- `version`
+- `description`
+- `category` (`archive`, `conversion`, `development`, `editor`, `media`, `network`, `system`, `utility`, `viewer`, `other`)
+- `type` (`external_viewer` or `external_editor`, optional)
+- `mime_types` (list, optional)
+
+See [ADDING_TO_STORE.md](ADDING_TO_STORE.md) for the full plugin and application TOML format.
 
 ## Build the store index
 
@@ -85,14 +106,15 @@ A GitHub Actions workflow automatically triggers when a new tag is pushed, recom
 
 ## Suggested workflow
 
-1. Add a directory `plugins/<plugin-id>/`
-2. Add `plugins/<plugin-id>/plugin.toml`
+1. For a plugin, add `plugins/<plugin-id>/plugin.toml`
+2. For an application, add `applications/<application-id>/apps.toml`
 3. Run `python3 scripts/compile_store.py`
 4. Commit and push to `main`
-5. kkc downloads/reads `dist/store-index.json` to display the plugin store
+5. kkc downloads/reads `dist/store-index.json` to display the store
 
 ## Examples
 
 - `plugins/example-local/plugin.toml`
 - `plugins/example-remote/plugin.toml`
-# kkc-plugins
+- `applications/bat/apps.toml`
+- `applications/micro/apps.toml`

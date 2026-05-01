@@ -1,0 +1,31 @@
+[application]
+id = "bookokrat"
+name = "Bookokrat"
+version = "0.3.10"
+description = "Terminal EPUB, PDF and DJVU reader with HTML rendering, annotations and image support."
+category = "viewer"
+type = "external_viewer"
+mime_types = ["application/epub+zip", "application/pdf", "image/vnd.djvu", "text/html", "application/xhtml+xml"]
+
+[[install]]
+os = "macos"
+method = "brew"
+package = "bookokrat"
+bin = "bookokrat"
+
+[[install]]
+os = ["linux", "macos", "windows"]
+method = "cargo"
+crate = "bookokrat"
+bin = "bookokrat"
+
+[[install]]
+os = "linux"
+method = "manual"
+url = "https://github.com/bugzmanov/bookokrat/releases/latest"
+bin = "bookokrat"
+
+[extra]
+homepage = "https://bugzmanov.github.io/bookokrat/"
+repository = "https://github.com/bugzmanov/bookokrat"
+license = "MIT"

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-04-29T18:22:35.350023+00:00",
+  "generated_at": "2026-05-01T13:35:33.278434+00:00",
   "source_repo": "https://github.com/redbug26/kkc-plugins",
   "plugins_count": 5,
   "plugins": [
@@ -115,6 +115,270 @@
       "extra": {
         "author": "kkc community",
         "license": "MIT"
+      }
+    }
+  ],
+  "applications_count": 5,
+  "applications": [
+    {
+      "id": "bat",
+      "name": "bat",
+      "version": "0.25.0",
+      "description": "Syntax-highlighting text viewer usable as an external viewer.",
+      "category": "viewer",
+      "type": "external_viewer",
+      "mime_types": [
+        "text/plain",
+        "text/markdown",
+        "application/json"
+      ],
+      "install": [
+        {
+          "os": [
+            "macos",
+            "linux"
+          ],
+          "method": "cargo",
+          "crate": "bat",
+          "bin": "bat"
+        },
+        {
+          "os": [
+            "macos"
+          ],
+          "method": "brew",
+          "package": "bat",
+          "bin": "bat"
+        },
+        {
+          "os": [
+            "debian",
+            "ubuntu"
+          ],
+          "method": "apt",
+          "package": "bat",
+          "bin": "batcat"
+        }
+      ],
+      "descriptor": "applications/bat/apps.toml",
+      "extra": {
+        "homepage": "https://github.com/sharkdp/bat",
+        "license": "Apache-2.0 OR MIT"
+      }
+    },
+    {
+      "id": "bookokrat",
+      "name": "Bookokrat",
+      "version": "0.3.10",
+      "description": "Terminal EPUB, PDF and DJVU reader with HTML rendering, annotations and image support.",
+      "category": "viewer",
+      "type": "external_viewer",
+      "mime_types": [
+        "application/epub+zip",
+        "application/pdf",
+        "image/vnd.djvu",
+        "text/html",
+        "application/xhtml+xml"
+      ],
+      "install": [
+        {
+          "os": [
+            "macos"
+          ],
+          "method": "brew",
+          "package": "bookokrat",
+          "bin": "bookokrat"
+        },
+        {
+          "os": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "method": "cargo",
+          "crate": "bookokrat",
+          "bin": "bookokrat"
+        },
+        {
+          "os": [
+            "linux"
+          ],
+          "method": "manual",
+          "url": "https://github.com/bugzmanov/bookokrat/releases/latest",
+          "bin": "bookokrat"
+        }
+      ],
+      "descriptor": "applications/bookokrat/apps.toml",
+      "extra": {
+        "homepage": "https://bugzmanov.github.io/bookokrat/",
+        "repository": "https://github.com/bugzmanov/bookokrat",
+        "license": "MIT"
+      }
+    },
+    {
+      "id": "helix",
+      "name": "Helix",
+      "version": "25.07.1",
+      "description": "Modal terminal text editor with tree-sitter highlighting and LSP support.",
+      "category": "editor",
+      "type": "external_editor",
+      "mime_types": [
+        "text/plain",
+        "text/markdown",
+        "application/json",
+        "text/x-lua",
+        "text/x-python",
+        "text/x-rust"
+      ],
+      "install": [
+        {
+          "os": [
+            "macos"
+          ],
+          "method": "brew",
+          "package": "helix",
+          "bin": "hx"
+        },
+        {
+          "os": [
+            "fedora",
+            "rhel"
+          ],
+          "method": "dnf",
+          "package": "helix",
+          "bin": "hx"
+        },
+        {
+          "os": [
+            "arch"
+          ],
+          "method": "pacman",
+          "package": "helix",
+          "bin": "helix"
+        },
+        {
+          "os": [
+            "windows"
+          ],
+          "method": "winget",
+          "package": "Helix.Helix",
+          "bin": "hx"
+        },
+        {
+          "os": [
+            "windows"
+          ],
+          "method": "scoop",
+          "package": "helix",
+          "bin": "hx"
+        },
+        {
+          "os": [
+            "linux",
+            "macos",
+            "windows"
+          ],
+          "method": "manual",
+          "url": "https://github.com/helix-editor/helix/releases/latest",
+          "bin": "hx"
+        }
+      ],
+      "descriptor": "applications/helix/apps.toml",
+      "extra": {
+        "homepage": "https://helix-editor.com/",
+        "repository": "https://github.com/helix-editor/helix",
+        "license": "MPL-2.0"
+      }
+    },
+    {
+      "id": "micro",
+      "name": "micro",
+      "version": "2.0.14",
+      "description": "Terminal text editor usable as an external editor.",
+      "category": "editor",
+      "type": "external_editor",
+      "mime_types": [
+        "text/plain",
+        "text/markdown",
+        "application/json"
+      ],
+      "install": [
+        {
+          "os": [
+            "macos",
+            "linux"
+          ],
+          "method": "brew",
+          "package": "micro",
+          "bin": "micro"
+        },
+        {
+          "os": [
+            "debian",
+            "ubuntu"
+          ],
+          "method": "apt",
+          "package": "micro",
+          "bin": "micro"
+        },
+        {
+          "os": [
+            "windows"
+          ],
+          "method": "winget",
+          "package": "zyedidia.micro",
+          "bin": "micro"
+        }
+      ],
+      "descriptor": "applications/micro/apps.toml",
+      "extra": {
+        "homepage": "https://micro-editor.github.io/",
+        "license": "MIT"
+      }
+    },
+    {
+      "id": "opencubicplayer",
+      "name": "Open Cubic Player",
+      "version": "3.2.0",
+      "description": "Text-mode music player and visualizer for modules, chiptunes and common audio formats.",
+      "category": "media",
+      "type": "external_viewer",
+      "mime_types": [
+        "audio/mpeg",
+        "audio/ogg",
+        "audio/flac",
+        "audio/wav",
+        "audio/x-mod",
+        "audio/x-s3m",
+        "audio/x-xm",
+        "audio/x-it",
+        "audio/prs.sid"
+      ],
+      "install": [
+        {
+          "os": [
+            "debian",
+            "ubuntu"
+          ],
+          "method": "apt",
+          "package": "opencubicplayer",
+          "bin": "ocp"
+        },
+        {
+          "os": [
+            "linux",
+            "windows"
+          ],
+          "method": "manual",
+          "url": "https://github.com/mywave82/opencubicplayer/releases/latest",
+          "bin": "ocp"
+        }
+      ],
+      "descriptor": "applications/opencubicplayer/apps.toml",
+      "extra": {
+        "homepage": "https://stian.cubic.org/project-ocp.php",
+        "repository": "https://github.com/mywave82/opencubicplayer",
+        "license": "GPL-2.0-or-later"
       }
     }
   ],
