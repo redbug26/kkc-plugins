@@ -29,6 +29,13 @@ method = "manual"
 url = "https://github.com/mywave82/opencubicplayer/releases/latest"
 bin = "ocp"
 
+[[install]]
+os = "macos"
+method = "brew"
+package = "ocp"
+bin = "ocp-curses"
+
+
 [extra]
 homepage = "https://stian.cubic.org/project-ocp.php"
 repository = "https://github.com/mywave82/opencubicplayer"
