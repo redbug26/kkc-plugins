@@ -1,0 +1,15 @@
+[plugin]
+id = "dropbox"
+name = "Dropbox"
+version = "0.1.0"
+type = "remote-rust"
+description = "Dropbox remote filesystem plugin for kkc-rust"
+
+[location]
+kind = "local"
+path = "assets"
+
+[extra]
+author = "kkc"
+license = "MIT"
+runtime = "rust/abi_stable"

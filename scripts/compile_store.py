@@ -20,7 +20,7 @@ except ModuleNotFoundError:
     print("ERROR: Python 3.11+ is required (tomllib missing)", file=sys.stderr)
     sys.exit(2)
 
-ALLOWED_PLUGIN_TYPES = {"viewer", "archive", "action", "other"}
+ALLOWED_PLUGIN_TYPES = {"viewer", "archive", "action", "remote-rust", "other"}
 ALLOWED_APPLICATION_TYPES = {"external_viewer", "external_editor"}
 ALLOWED_APPLICATION_CATEGORIES = {
     "archive",

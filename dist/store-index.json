@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-02T17:16:22.717635+00:00",
+  "generated_at": "2026-05-02T19:08:28.605049+00:00",
   "source_repo": "https://github.com/redbug26/kkc-plugins",
-  "plugins_count": 5,
+  "plugins_count": 6,
   "plugins": [
     {
       "id": "amsdos-viewer",
@@ -68,6 +68,25 @@
       "extra": {
         "author": "kkc community",
         "license": "MIT"
+      }
+    },
+    {
+      "id": "dropbox",
+      "name": "Dropbox",
+      "version": "0.1.0",
+      "type": "remote-rust",
+      "description": "Dropbox remote filesystem plugin for kkc-rust",
+      "mime_types": [],
+      "modes": [],
+      "location": {
+        "kind": "local",
+        "path": "/plugins/dropbox/assets"
+      },
+      "descriptor": "plugins/dropbox/plugin.toml",
+      "extra": {
+        "author": "kkc",
+        "license": "MIT",
+        "runtime": "rust/abi_stable"
       }
     },
     {
