@@ -76,6 +76,7 @@ Common fields in `[application]`:
 - `description`
 - `category` (`archive`, `conversion`, `development`, `editor`, `media`, `network`, `system`, `utility`, `viewer`, `other`)
 - `type` (`external_viewer` or `external_editor`, optional)
+- `wait_for_key_after_exit` (boolean, optional, asks kkc to pause after applications that exit immediately)
 - `mime_types` (list, optional)
 
 See [ADDING_TO_STORE.md](ADDING_TO_STORE.md) for the full plugin and application TOML format.

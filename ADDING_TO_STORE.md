@@ -97,6 +97,7 @@ version = "0.25.0"
 description = "Syntax-highlighting text viewer usable as an external viewer."
 category = "viewer"
 type = "external_viewer"
+wait_for_key_after_exit = false
 mime_types = ["text/plain", "text/markdown", "application/json"]
 
 [[install]]
@@ -134,6 +135,7 @@ Optional fields in `[application]`:
 
 - `mime_types`: list of associated MIME types, empty by default.
 - `type`: `external_viewer` or `external_editor`. Omit this field if the application is not tied to a specific role.
+- `wait_for_key_after_exit`: boolean, defaults to `false`. Set to `true` for applications that render output and then return to the system immediately, so kkc can show a “Press a key to continue” prompt after execution.
 
 Each application must define at least one `[[install]]` table.
 

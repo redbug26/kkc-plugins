@@ -240,6 +240,10 @@ def validate_application(desc: dict, descriptor_path: Path, repo_root: Path) -> 
         if app_type not in ALLOWED_APPLICATION_TYPES:
             fail(f"application.type must be one of {sorted(ALLOWED_APPLICATION_TYPES)}")
 
+    wait_for_key_after_exit = application.get("wait_for_key_after_exit", False)
+    if not isinstance(wait_for_key_after_exit, bool):
+        fail("application.wait_for_key_after_exit must be a boolean when present")
+
     mime_types = as_str_list(application.get("mime_types"), "application.mime_types")
     install_entries = desc.get("install")
     if not isinstance(install_entries, list) or not install_entries:
@@ -259,6 +263,7 @@ def validate_application(desc: dict, descriptor_path: Path, repo_root: Path) -> 
         "description": description,
         "category": category,
         "type": app_type,
+        "wait_for_key_after_exit": wait_for_key_after_exit,
         "mime_types": mime_types,
         "install": install,
         "descriptor": rel_descriptor,

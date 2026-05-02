@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-01T14:52:53.390964+00:00",
+  "generated_at": "2026-05-02T17:15:36.703353+00:00",
   "source_repo": "https://github.com/redbug26/kkc-plugins",
   "plugins_count": 5,
   "plugins": [
@@ -127,6 +127,7 @@
       "description": "Syntax-highlighting text viewer usable as an external viewer.",
       "category": "viewer",
       "type": "external_viewer",
+      "wait_for_key_after_exit": false,
       "mime_types": [
         "text/plain",
         "text/markdown",
@@ -173,6 +174,7 @@
       "description": "Terminal UI for managing Homebrew packages and casks.",
       "category": "system",
       "type": null,
+      "wait_for_key_after_exit": false,
       "mime_types": [],
       "install": [
         {
@@ -217,6 +219,7 @@
       "description": "Terminal EPUB, PDF and DJVU reader with HTML rendering, annotations and image support.",
       "category": "viewer",
       "type": "external_viewer",
+      "wait_for_key_after_exit": false,
       "mime_types": [
         "application/epub+zip",
         "application/pdf",
@@ -266,6 +269,7 @@
       "description": "Modal terminal text editor with tree-sitter highlighting and LSP support.",
       "category": "editor",
       "type": "external_editor",
+      "wait_for_key_after_exit": false,
       "mime_types": [
         "text/plain",
         "text/markdown",
@@ -341,6 +345,7 @@
       "description": "Terminal image and GIF viewer.",
       "category": "viewer",
       "type": "external_viewer",
+      "wait_for_key_after_exit": true,
       "mime_types": [
         "image/bmp",
         "image/gif",
@@ -410,6 +415,7 @@
       "description": "Terminal text editor usable as an external editor.",
       "category": "editor",
       "type": "external_editor",
+      "wait_for_key_after_exit": false,
       "mime_types": [
         "text/plain",
         "text/markdown",
@@ -456,6 +462,7 @@
       "description": "Text-mode music player and visualizer for modules, chiptunes and common audio formats.",
       "category": "media",
       "type": "external_viewer",
+      "wait_for_key_after_exit": false,
       "mime_types": [
         "audio/mpeg",
         "audio/ogg",
@@ -509,6 +516,7 @@
       "description": "Terminal music and podcast player written in Rust.",
       "category": "media",
       "type": "external_viewer",
+      "wait_for_key_after_exit": false,
       "mime_types": [
         "audio/aac",
         "audio/aiff",
@@ -580,6 +588,7 @@
       "description": "Text-based module music player using libopenmpt.",
       "category": "media",
       "type": "external_viewer",
+      "wait_for_key_after_exit": false,
       "mime_types": [
         "audio/x-mod",
         "audio/x-xm",

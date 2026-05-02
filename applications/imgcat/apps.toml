@@ -5,6 +5,7 @@ version = "1.0.22"
 description = "Terminal image and GIF viewer."
 category = "viewer"
 type = "external_viewer"
+wait_for_key_after_exit = true
 mime_types = [
   "image/bmp",
   "image/gif",
