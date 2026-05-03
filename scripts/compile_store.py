@@ -324,7 +324,7 @@ def build_index(repo_root: Path, plugins_dir: Path, applications_dir: Path) -> d
     return {
         "schema_version": 1,
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "source_repo": "https://github.com/redbug26/kkc-plugins",
+        "source_repo": "https://github.com/redbug26/kkc-store",
         "plugins_count": len(plugins),
         "plugins": plugins,
         "applications_count": len(applications),

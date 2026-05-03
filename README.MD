@@ -1,9 +1,9 @@
-# kkc-plugins
+# kkc-store
 
 Community plugin and application store for **kkc**.
 
-- Local repository: `/Users/miguelvanhove/Dropbox/Sources/kkc-plugins`
-- GitHub repository: `https://github.com/redbug26/kkc-plugins`
+- Local repository: `/Users/miguelvanhove/Dropbox/Sources/kkc-store`
+- GitHub repository: `https://github.com/redbug26/kkc-store`
 
 This repository may not contain every plugin binary or application package directly. Instead, it stores **plugin descriptors** and **application descriptors**, then generates a compiled **store index** (`dist/store-index.json`) that kkc can read to list and install plugins or applications.
 
@@ -16,7 +16,7 @@ Applications listed in this store must be usable from a terminal/TUI context. Th
 ## Repository layout
 
 ```text
-kkc-plugins/
+kkc-store/
   README.MD
   scripts/
     compile_store.py

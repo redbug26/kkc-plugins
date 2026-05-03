@@ -9,7 +9,7 @@ modes = ["text"]
 
 [location]
 kind = "github"
-repo = "redbug26/kkc-plugins"
+repo = "redbug26/kkc-store"
 path = "assets/plugins/json_viewer"
 ref = "main"
 

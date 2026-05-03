@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generated_at": "2026-05-03T12:36:20.607244+00:00",
-  "source_repo": "https://github.com/redbug26/kkc-plugins",
+  "source_repo": "https://github.com/redbug26/kkc-store",
   "plugins_count": 7,
   "plugins": [
     {
@@ -106,7 +106,7 @@
       ],
       "location": {
         "kind": "github",
-        "repo": "redbug26/kkc-plugins",
+        "repo": "redbug26/kkc-store",
         "ref": "main",
         "path": "assets/plugins/json_viewer"
       },

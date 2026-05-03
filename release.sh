@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""release.sh - Prepare and publish a kkc-plugins release.
+"""release.sh - Prepare and publish a kkc-store release.
 
 What this script does:
 1. Computes the next repository tag from the latest git tag.
