@@ -1,0 +1,11 @@
+[plugin]
+id = "sqlite_tables_csv"
+name = "sqlite_tables_csv"
+version = "1.0.0"
+type = "archive"
+description = "Open SQLite DB as CSV files (one table = one CSV)"
+mime_types = ["application/x-sqlite3"]
+
+[location]
+kind = "local"
+path = "."

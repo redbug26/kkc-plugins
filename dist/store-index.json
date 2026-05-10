@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-10T16:50:16.900608+00:00",
+  "generated_at": "2026-05-10T18:10:38.166025+00:00",
   "source_repo": "https://github.com/redbug26/kkc-store",
-  "plugins_count": 8,
+  "plugins_count": 9,
   "plugins": [
     {
       "id": "amsdos-viewer",
@@ -136,6 +136,23 @@
         "license": "MIT",
         "runtime": "rust/abi_stable"
       }
+    },
+    {
+      "id": "sqlite_tables_csv",
+      "name": "sqlite_tables_csv",
+      "version": "1.0.0",
+      "type": "archive",
+      "description": "Open SQLite DB as CSV files (one table = one CSV)",
+      "mime_types": [
+        "application/x-sqlite3"
+      ],
+      "modes": [],
+      "location": {
+        "kind": "local",
+        "path": "/plugins/sqlite_tables_csv"
+      },
+      "descriptor": "plugins/sqlite_tables_csv/plugin.toml",
+      "extra": {}
     },
     {
       "id": "vcard-viewer",
