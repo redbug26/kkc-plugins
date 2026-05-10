@@ -7,12 +7,6 @@ type = "external_viewer"
 
 [[install]]
 os = ["linux", "macos", "windows"]
-method = "cargo"
-crate = "ttymap"
-bin = "ttymap"
-
-[[install]]
-os = ["linux", "macos", "windows"]
 method = "manual"
 url = "https://github.com/Kohei-Wada/ttymap/releases/latest"
 bin = "ttymap"
