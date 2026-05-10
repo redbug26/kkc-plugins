@@ -1,9 +1,27 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-10T18:10:49.318783+00:00",
+  "generated_at": "2026-05-10T19:32:08.735017+00:00",
   "source_repo": "https://github.com/redbug26/kkc-store",
-  "plugins_count": 9,
+  "plugins_count": 11,
   "plugins": [
+    {
+      "id": "amiga_adf",
+      "name": "Amiga ADF explorer",
+      "version": "1.0.0",
+      "type": "archive",
+      "description": "Read-only Amiga ADF explorer for OFS/FFS disk images",
+      "mime_types": [
+        "application/x-amiga-adf-ofs",
+        "application/x-amiga-adf-ffs"
+      ],
+      "modes": [],
+      "location": {
+        "kind": "local",
+        "path": "/plugins/amiga_adf"
+      },
+      "descriptor": "plugins/amiga_adf/plugin.toml",
+      "extra": {}
+    },
     {
       "id": "amsdos-viewer",
       "name": "amsdos_viewer",
@@ -136,6 +154,23 @@
         "license": "MIT",
         "runtime": "rust/abi_stable"
       }
+    },
+    {
+      "id": "powerpacker",
+      "name": "PowerPacker decrunch",
+      "version": "1.0.0",
+      "type": "archive",
+      "description": "Decrunch Amiga PowerPacker files (PP20/PP11)",
+      "mime_types": [
+        "application/x-powerpacker"
+      ],
+      "modes": [],
+      "location": {
+        "kind": "local",
+        "path": "/plugins/powerpacker"
+      },
+      "descriptor": "plugins/powerpacker/plugin.toml",
+      "extra": {}
     },
     {
       "id": "sqlite_tables_csv",

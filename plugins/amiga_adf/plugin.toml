@@ -1,0 +1,11 @@
+[plugin]
+id = "amiga_adf"
+name = "Amiga ADF explorer"
+version = "1.0.0"
+type = "archive"
+description = "Read-only Amiga ADF explorer for OFS/FFS disk images"
+mime_types = ["application/x-amiga-adf-ofs", "application/x-amiga-adf-ffs"]
+
+[location]
+kind = "local"
+path = "."

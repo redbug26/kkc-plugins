@@ -1,0 +1,11 @@
+[plugin]
+id = "powerpacker"
+name = "PowerPacker decrunch"
+version = "1.0.0"
+type = "archive"
+description = "Decrunch Amiga PowerPacker files (PP20/PP11)"
+mime_types = ["application/x-powerpacker"]
+
+[location]
+kind = "local"
+path = "."
